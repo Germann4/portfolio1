@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
         updateLocalStorage();
         updateUI();
         resetForm();
-        showSuccessMessage('Transaction added successfully!');
+        showSuccessMessage('Transacción agregada correctamente!');
     });
 
     filterTypeInput.addEventListener('change', updateUI);
