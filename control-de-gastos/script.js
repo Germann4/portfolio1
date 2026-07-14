@@ -128,7 +128,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 removeTransaction(id);
                 updateLocalStorage();
                 updateUI();
-                showSuccessMessage('Transaction deleted!');
+                showSuccessMessage('Transacción eliminada!');
             });
         });
     }
