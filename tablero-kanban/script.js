@@ -33,9 +33,7 @@ function getSavedColumns() {
 		completeListArray = JSON.parse(localStorage.completeItems);
 		onHoldListArray = JSON.parse(localStorage.onHoldItems);
 	} else {
-		const intro = prompt(
-			"Type 'y' (Yes) if you want to display an Editable Sample? \n(Not typing 'y' will display a plane NEW board.)"
-		);
+		
 		if (intro === "y" || intro === "Y") {
 			backlogListArray = [
 				"Write the documentation",
