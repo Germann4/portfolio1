@@ -18,59 +18,57 @@
 
     <div class="container disable">
 
-        <h2>Easy Image Editor</h2>
+    <h2>Editor de Imágenes</h2>
 
-        <div class="wrapper">
-            <div class="editor-panel">
-                <div class="filter">
-                    <label for="" class="title">Filters</label>
+    <div class="wrapper">
+        <div class="editor-panel">
+            <div class="filter">
+                <label class="title">Filtros</label>
 
-                    <div class="options">
-                        <button id="brightness" class="active">Brightness</button>
-                        <button id="saturation"> Saturation</button>
-                        <button id="inversion">Inversion</button>
-                        <button id="grayscale">Grayscale</button>
-                    </div>
-
-                    <div class="slider">
-                        <div class="filter-info">
-                            <p class="name">Brightness</p>
-                            <p class="value">100%</p>
-                        </div>
-
-                        <input type="range" value="100" min="0" max="200">
-                    </div>
+                <div class="options">
+                    <button id="brightness" class="active">Brillo</button>
+                    <button id="saturation">Saturación</button>
+                    <button id="inversion">Inversión</button>
+                    <button id="grayscale">Escala de grises</button>
                 </div>
 
-                <div class="rotate">
-                    <label for="" class="title">Rotate & Flip</label>
-
-                    <div class="options">
-                        <button id="left"><i class='bx bx-rotate-left'></i></button>
-                        <button id="right"><i class='bx bx-rotate-right' ></i></button>
-                        <button id="vertical"><i class='bx bx-expand-vertical'></i></button>
-                        <button id="horizontal"><i class='bx bx-expand-horizontal' ></i></button>
+                <div class="slider">
+                    <div class="filter-info">
+                        <p class="name">Brillo</p>
+                        <p class="value">100%</p>
                     </div>
+
+                    <input type="range" value="100" min="0" max="200">
                 </div>
             </div>
 
-            <div class="preview-img">
-                <img src="image-placeholder.svg" alt="preview image">
+            <div class="rotate">
+                <label class="title">Rotar y Voltear</label>
+
+                <div class="options">
+                    <button id="left"><i class='bx bx-rotate-left'></i></button>
+                    <button id="right"><i class='bx bx-rotate-right'></i></button>
+                    <button id="vertical"><i class='bx bx-expand-vertical'></i></button>
+                    <button id="horizontal"><i class='bx bx-expand-horizontal'></i></button>
+                </div>
             </div>
         </div>
 
-        <div class="controls">
-            <button class="reset-filter">Reset Filters</button>
-
-            <div class="row">
-                <input type="file" accept="image/*" class="file-input" hidden>
-                <button class="choose-img">Choose Image</button>
-                <button class="save-img">Save Image</button>
-
-            </div>
+        <div class="preview-img">
+            <img src="image-placeholder.svg" alt="Vista previa de la imagen">
         </div>
     </div>
 
+    <div class="controls">
+        <button class="reset-filter">Restablecer filtros</button>
+
+        <div class="row">
+            <input type="file" accept="image/*" class="file-input" hidden>
+            <button class="choose-img">Seleccionar imagen</button>
+            <button class="save-img">Guardar imagen</button>
+        </div>
+    </div>
+</div>
 
     <script src="script.js"></script>
 </body>
